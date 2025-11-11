@@ -11,6 +11,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "click>=8.0.0",
+        "requests",
     ],
     entry_points={
         "console_scripts": [
