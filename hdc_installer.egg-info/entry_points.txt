@@ -1,3 +1,0 @@
-[console_scripts]
-hdc_installer = hdc_installer.cli:main
-
