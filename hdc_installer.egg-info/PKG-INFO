@@ -1,3 +1,19 @@
+Metadata-Version: 2.1
+Name: hdc-installer
+Version: 0.1.0
+Summary: A lightweight installer for HarmonyOS HDC tools
+Home-page: https://github.com/youngfreeFJS/harmony_hdc_bin_collection
+Author: youngfreefjs
+Author-email: youngfreefjs@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # harmony_hdc_bin_collection
 Complete and available collection of `hdc` command tools. No need to download the development SDK for FamilyBucket, lightweight downloads are available.
 
@@ -35,23 +51,3 @@ hdc_installer -i
 - Python 3.6 or higher
 - click library (automatically installed with the package)
 
-## Publishing
-
-### Local Publishing
-
-To publish locally to PyPI:
-
-1. Make sure you have `twine` installed: `pip install twine`
-2. Run the publish script: `./publish_local.sh`
-3. Upload to PyPI: `twine upload dist/*`
-
-### GitHub Actions Publishing
-
-The repository includes GitHub Actions for automatic publishing:
-
-- `publish.yml` - Publishes to PyPI when a release is published
-- `test_publish.yml` - Publishes to TestPyPI on pushes to main branch
-
-To enable GitHub Actions publishing, you need to set up secrets in your repository:
-- `PYPI_API_TOKEN` - API token for PyPI
-- `TEST_PYPI_API_TOKEN` - API token for TestPyPI

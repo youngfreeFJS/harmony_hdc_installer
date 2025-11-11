@@ -66,3 +66,24 @@ To test the package without installing:
 cd hdc_installer
 python -m hdc_installer
 ```
+
+## Publishing
+
+### Local Publishing
+
+To publish locally to PyPI:
+
+1. Make sure you have `twine` installed: `pip install twine`
+2. Run the publish script: `./publish_local.sh`
+3. Upload to PyPI: `twine upload dist/*`
+
+### GitHub Actions Publishing
+
+The repository includes GitHub Actions for automatic publishing:
+
+- `publish.yml` - Publishes to PyPI when a release is published
+- `test_publish.yml` - Publishes to TestPyPI on pushes to main branch
+
+To enable GitHub Actions publishing, you need to set up secrets in your repository:
+- `PYPI_API_TOKEN` - API token for PyPI
+- `TEST_PYPI_API_TOKEN` - API token for TestPyPI
